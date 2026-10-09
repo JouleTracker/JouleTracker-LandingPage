@@ -170,7 +170,6 @@
             <button type="button" data-lang="es" aria-pressed="true" class="is-active">ES</button>
             <button type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <button type="button" class="btn btn--primary btn--sm nav__cta" data-scroll-to="contacto" data-i18n="nav.cta">Empezar</button>
           <button type="button" class="nav__burger" data-drawer-toggle aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.openMenu" aria-label="Abrir menú de navegación">
             <svg class="icon icon--burger" aria-hidden="true"><use href="#i-menu"/></svg>
             <svg class="icon icon--burger-close" aria-hidden="true"><use href="#i-x"/></svg>
@@ -202,7 +201,7 @@
             <button type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
-        <button type="button" class="btn btn--primary btn--lg drawer__cta" data-scroll-to="contacto" data-i18n="nav.cta">Empezar</button>
+        <a href="https://jouletracker-app.onrender.com" class="btn btn--primary btn--lg drawer__cta" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Empezar</a>
       </div>
     </div>
 
@@ -242,12 +241,17 @@
     </p>
 
     <div class="hero__actions" data-reveal style="--rd:.24s">
-      <button type="button" class="btn btn--primary btn--lg" data-scroll-to="contacto">
-        <span data-i18n="hero.ctaPrimary">Comenzar</span>
-        <svg class="icon btn__icon" aria-hidden="true">
-          <use href="#i-arrow-right"/>
-        </svg>
-      </button>
+      <a 
+  href="https://jouletracker-app.onrender.com" 
+  class="btn btn--primary btn--lg"
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <span data-i18n="hero.ctaPrimary">Comenzar</span>
+  <svg class="icon btn__icon" aria-hidden="true">
+    <use href="#i-arrow-right"/>
+  </svg>
+</a>
 
       <button
         type="button"
