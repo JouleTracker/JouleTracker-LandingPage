@@ -2652,6 +2652,30 @@ body.drawer-open {
   opacity: 0.95;
 }
 
+.about__video-block {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--ink-200);
+}
+
+.about__video-frame {
+  margin: 28px auto 0;
+  max-width: 880px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0f172a;
+  border: 1px solid var(--ink-200);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.about__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #000;
+}
+
 /* ---------- Location ---------- */
 .location {
   background: var(--paper);
@@ -3357,4 +3381,212 @@ body.drawer-open {
 /* ---------- Misc state helpers ---------- */
 .is-visible {
   opacity: 1;
+}
+
+/* ---------- Segments (Homeowner & MYPE) ---------- */
+.segments {
+  background: var(--paper-50);
+  border-top: 1px solid var(--ink-200);
+  border-bottom: 1px solid var(--ink-200);
+}
+
+.segments__grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .segments__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.segment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--paper);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.segment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--primary-100);
+}
+
+.segment-card--business {
+  border-color: var(--primary-100);
+}
+
+.segment-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--primary-50);
+  color: var(--primary);
+}
+
+.segment-card--business .segment-card__badge {
+  background: var(--warning-50);
+  color: var(--warning-700);
+}
+
+.segment-card__title {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink-950);
+}
+
+.segment-card__desc {
+  margin-top: 10px;
+  color: var(--ink-700);
+  font-size: 15px;
+}
+
+.segment-card__list {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--ink-800);
+}
+
+.segment-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.segment-card__list .icon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--primary);
+}
+
+.segment-card__cta {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ---------- Legal pages (Terms & Privacy) ---------- */
+.legal-main {
+  padding-top: calc(var(--nav-h) + 40px);
+  padding-bottom: clamp(56px, 7vw, 96px);
+  background: var(--paper-50);
+  min-height: 75vh;
+}
+
+.legal-shell {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.legal-back:hover {
+  text-decoration: underline;
+}
+
+.legal-header {
+  margin-bottom: 28px;
+}
+
+.legal-title {
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--ink-950);
+}
+
+.legal-lead {
+  margin-top: 14px;
+  font-size: 16px;
+  color: var(--ink-700);
+}
+
+.legal-updated {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-500);
+}
+
+.legal-card {
+  background: var(--paper);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  padding: clamp(24px, 4vw, 40px);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: 28px;
+}
+
+.legal-section h2 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink-950);
+  margin-bottom: 10px;
+}
+
+.legal-section p {
+  color: var(--ink-700);
+  font-size: 15px;
+}
+
+.legal-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: disc;
+  display: grid;
+  gap: 8px;
+  color: var(--ink-700);
+  font-size: 15px;
+}
+
+.legal-switch {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--ink-600);
+}
+
+.legal-switch a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.legal-switch a:hover {
+  text-decoration: underline;
 }
