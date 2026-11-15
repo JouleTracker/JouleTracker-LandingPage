@@ -110,6 +110,9 @@ export const translations = {
           desc: "Consulta información anterior para reconocer patrones.",
         },
       ],
+      videoEyebrow: "About the Product",
+      videoTitle: "Conoce JouleTracker en acción",
+      videoSub: "Descubre el propósito, los beneficios y una demostración real de nuestras funcionalidades.",
     },
     how: {
       eyebrow: "Cómo funciona",
@@ -593,6 +596,9 @@ export const translations = {
           desc: "Browse previous information to recognize patterns.",
         },
       ],
+      videoEyebrow: "About the Product",
+      videoTitle: "See JouleTracker in action",
+      videoSub: "Discover the purpose, benefits, and a live walkthrough of our core features.",
     },
     how: {
       eyebrow: "How it works",
