@@ -452,7 +452,7 @@ faqButtons.forEach((btn) => {
 
 const subjectInput = document.getElementById("ct-subject");
 
-document.querySelectorAll("[data-plan]").forEach((btn) => {
+document.querySelectorAll("button[data-plan]").forEach((btn) => {
   btn.addEventListener("click", () => {
     subjectInput.value = `${translations[lang].pricing.prefill} ${btn.dataset.plan}`.trim();
     subjectInput.closest(".field").classList.remove("has-error");

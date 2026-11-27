@@ -517,12 +517,14 @@ main[id] {
 }
 
 /* Keep the navbar from overflowing on small screens */
-.nav__cta {
+.nav__cta,
+.nav__signin {
   display: none;
 }
 
 @media (min-width: 640px) {
-  .nav__cta {
+  .nav__cta,
+  .nav__signin {
     display: inline-flex;
   }
 }
@@ -681,6 +683,17 @@ main[id] {
 
 .drawer__cta {
   margin-top: auto;
+}
+
+.drawer__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.drawer__actions .btn {
+  width: 100%;
 }
 
 body.drawer-open {
