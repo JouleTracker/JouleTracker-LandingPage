@@ -186,7 +186,7 @@ export const translations = {
       perMonth: "/ mes",
       offerTag: "Lanzamiento",
       offer: "Precio de lanzamiento por tiempo limitado · 14 días de prueba · Cancela cuando quieras",
-      cta: "Empezar prueba gratis",
+      cta: "Elegir plan",
       note: "Precios referenciales en soles (S/), facturación mensual. La prueba gratuita de 14 días no requiere tarjeta.",
       prefill: "Quiero empezar con el plan",
       plans: [
@@ -422,7 +422,7 @@ export const translations = {
     finalCta: {
       title: "Empieza a entender mejor tu energía.",
       subtitle: "Convierte tus datos de consumo en información clara y útil.",
-      button: "Empezar prueba gratuita",
+      button: "Crear cuenta gratis",
       secondary: "Conocer JouleTracker",
       trust: "14 días gratis · Sin tarjeta · Cancela cuando quieras",
     },
@@ -674,7 +674,7 @@ export const translations = {
       perMonth: "/ month",
       offerTag: "Launch",
       offer: "Limited-time launch pricing · 14-day trial · Cancel anytime",
-      cta: "Start free trial",
+      cta: "Choose plan",
       note: "Reference prices in Peruvian soles (S/), billed monthly. The 14-day free trial requires no credit card.",
       prefill: "I want to start with the",
       plans: [
@@ -910,7 +910,7 @@ export const translations = {
     finalCta: {
       title: "Start understanding your energy better.",
       subtitle: "Turn your consumption data into clear, useful information.",
-      button: "Start free trial",
+      button: "Create free account",
       secondary: "Discover JouleTracker",
       trust: "14 days free · No card · Cancel anytime",
     },
