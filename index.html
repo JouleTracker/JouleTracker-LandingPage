@@ -168,7 +168,8 @@
             <button type="button" data-lang="es" aria-pressed="true" class="is-active">ES</button>
             <button type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <a href="https://jouletracker-front.onrender.com/login" class="btn btn--primary btn--sm nav__cta" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Empezar</a>
+          <a href="https://jouletracker-front.onrender.com/login" class="btn btn--ghost-dark btn--sm nav__signin" target="_blank" rel="noopener noreferrer" data-i18n="nav.signIn">Iniciar sesión</a>
+          <a href="https://jouletracker-front.onrender.com/registro" class="btn btn--primary btn--sm nav__cta" target="_blank" rel="noopener noreferrer" data-i18n="nav.signUp">Registrarse</a>
           <button type="button" class="nav__burger" data-drawer-toggle aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.openMenu" aria-label="Abrir menú de navegación">
             <svg class="icon icon--burger" aria-hidden="true"><use href="#i-menu"/></svg>
             <svg class="icon icon--burger-close" aria-hidden="true"><use href="#i-x"/></svg>
@@ -200,7 +201,10 @@
             <button type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
-        <a href="https://jouletracker-front.onrender.com/login" class="btn btn--primary btn--lg drawer__cta" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Empezar</a>
+        <div class="drawer__actions">
+          <a href="https://jouletracker-front.onrender.com/login" class="btn btn--ghost-dark btn--lg" target="_blank" rel="noopener noreferrer" data-i18n="nav.signIn">Iniciar sesión</a>
+          <a href="https://jouletracker-front.onrender.com/registro" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer" data-i18n="nav.signUp">Registrarse</a>
+        </div>
       </div>
     </div>
 
@@ -241,7 +245,7 @@
 
     <div class="hero__actions" data-reveal style="--rd:.24s">
       <a 
-  href="https://jouletracker-front.onrender.com/login" 
+  href="https://jouletracker-front.onrender.com/registro" 
   class="btn btn--primary btn--lg"
   target="_blank" 
   rel="noopener noreferrer"
@@ -793,7 +797,7 @@
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.0.features.2">Visualización de consumo</span></li>
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.0.features.3">Historial básico</span></li>
               </ul>
-              <button type="button" class="btn btn--ghost-dark plan__cta" data-plan="Starter" data-i18n="pricing.cta">Elegir plan</button>
+              <a href="https://jouletracker-front.onrender.com/registro?plan=starter" class="btn btn--ghost-dark plan__cta" target="_blank" rel="noopener noreferrer" data-i18n="pricing.cta">Elegir plan</a>
             </article>
 
             <article class="plan plan--popular" data-reveal style="--rd:.1s">
@@ -819,7 +823,7 @@
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.1.features.3">Recomendaciones</span></li>
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.1.features.4">Historial ampliado</span></li>
               </ul>
-              <button type="button" class="btn btn--primary plan__cta" data-plan="Plus" data-i18n="pricing.cta">Elegir plan</button>
+              <a href="https://jouletracker-front.onrender.com/registro?plan=plus" class="btn btn--primary plan__cta" target="_blank" rel="noopener noreferrer" data-i18n="pricing.cta">Elegir plan</a>
             </article>
 
             <article class="plan" data-reveal style="--rd:.2s">
@@ -844,7 +848,7 @@
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.2.features.3">Gestión avanzada de información</span></li>
                 <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pricing.plans.2.features.4">Soporte prioritario</span></li>
               </ul>
-              <button type="button" class="btn btn--ghost-dark plan__cta" data-plan="Pro" data-i18n="pricing.cta">Elegir plan</button>
+              <a href="https://jouletracker-front.onrender.com/registro?plan=pro" class="btn btn--ghost-dark plan__cta" target="_blank" rel="noopener noreferrer" data-i18n="pricing.cta">Elegir plan</a>
             </article>
           </div>
 
@@ -1311,7 +1315,7 @@
           <h2 class="final-cta__title" data-reveal style="--rd:.08s" data-i18n="finalCta.title">Empieza a entender mejor tu energía.</h2>
           <p class="final-cta__sub" data-reveal style="--rd:.16s" data-i18n="finalCta.subtitle">Convierte tus datos de consumo en información clara y útil.</p>
           <div class="final-cta__actions" data-reveal style="--rd:.24s">
-            <a href="https://jouletracker-front.onrender.com/login" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <a href="https://jouletracker-front.onrender.com/registro" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
               <span data-i18n="finalCta.button">Empezar prueba gratuita</span>
               <svg class="icon btn__icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
             </a>
