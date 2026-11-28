@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jouletracker.com/sitemap.xml
+Sitemap: https://jouletracker.github.io/JouleTracker-LandingPage/sitemap.xml
