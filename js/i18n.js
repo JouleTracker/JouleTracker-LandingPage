@@ -119,13 +119,19 @@ export const translations = {
     how: {
       eyebrow: "Cómo funciona",
       title: "Tres pasos para tener el control",
-      subtitle: "Un flujo simple para pasar de los datos a la acción.",
+      subtitle: "Del sensor IoT en tus circuitos a decisiones claras en tiempo real.",
       steps: [
-        { title: "Conecta", desc: "Registra los espacios y dispositivos que deseas monitorear." },
-        { title: "Monitorea", desc: "Consulta la información energética de forma centralizada." },
         {
-          title: "Analiza",
-          desc: "Identifica patrones y oportunidades para utilizar la energía de manera más eficiente.",
+          title: "1. Medición con sensores IoT",
+          desc: "Instala medidores y sensores IoT en tus espacios o tableros eléctricos para capturar kWh, voltaje, corriente y potencia en tiempo real.",
+        },
+        {
+          title: "2. Transmisión segura a la nube",
+          desc: "Los sensores envían las lecturas de forma continua y cifrada a la plataforma JouleTracker para centralizarlas automáticamente.",
+        },
+        {
+          title: "3. Visualización y alertas",
+          desc: "Visualiza dashboards claros, compara periodos, detecta picos anómalos y recibe alertas para optimizar tu consumo.",
         },
       ],
     },
@@ -273,7 +279,7 @@ export const translations = {
         { title: "Eficiencia", desc: "Pequeños cambios con impacto real." },
         { title: "Sostenibilidad", desc: "Usar la energía de forma consciente." },
       ],
-      imageAlt: "Ingenieros inspeccionando paneles solares en un campo de energía",
+      imageAlt: "Vista previa del panel web y aplicación de JouleTracker para monitoreo energético",
       videoEyebrow: "About the Team",
       videoTitle: "Conoce al equipo VoltLab y nuestra retrospectiva",
       videoSub: "Sesión de trabajo, roles del equipo y aprendizajes durante el desarrollo de JouleTracker.",
@@ -607,13 +613,19 @@ export const translations = {
     how: {
       eyebrow: "How it works",
       title: "Three steps to get in control",
-      subtitle: "A simple flow to go from data to action.",
+      subtitle: "From IoT sensors on your circuits to clear, real-time decisions.",
       steps: [
-        { title: "Connect", desc: "Register the spaces and devices you want to monitor." },
-        { title: "Monitor", desc: "Check energy information from a single, centralized place." },
         {
-          title: "Analyze",
-          desc: "Identify patterns and opportunities to use energy more efficiently.",
+          title: "1. IoT sensor measurement",
+          desc: "Install smart meters and IoT sensors across your spaces or electrical panels to capture kWh, voltage, current, and power in real time.",
+        },
+        {
+          title: "2. Secure cloud transmission",
+          desc: "Your IoT sensors continuously transmit encrypted readings to the JouleTracker platform so every circuit stays centralized.",
+        },
+        {
+          title: "3. Visualization & alerts",
+          desc: "Explore live dashboards, compare periods, spot consumption spikes, and act on automated alerts to cut waste.",
         },
       ],
     },
@@ -761,7 +773,7 @@ export const translations = {
         { title: "Efficiency", desc: "Small changes with real impact." },
         { title: "Sustainability", desc: "Using energy in a conscious way." },
       ],
-      imageAlt: "Engineers inspecting solar panels at an energy field",
+      imageAlt: "Preview of the JouleTracker web dashboard and energy monitoring platform",
       videoEyebrow: "About the Team",
       videoTitle: "Meet the VoltLab team & process retrospective",
       videoSub: "Team collaboration, member roles, and lessons learned while building JouleTracker.",

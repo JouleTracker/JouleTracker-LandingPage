@@ -11,11 +11,11 @@ function detectLang() {
   } catch {
     /* storage unavailable */
   }
-  return (navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es";
+  return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
 }
 
 function applyTranslations(code) {
-  const dict = translations[code] || translations.es;
+  const dict = translations[code] || translations.en;
   const pageDict = dict.legal[pageType];
 
   root.lang = code;
@@ -28,6 +28,16 @@ function applyTranslations(code) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const value = t(dict, el.dataset.i18n);
     if (value != null) el.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
+    const pairs = el.dataset.i18nAttr.split(";").map((s) => s.trim()).filter(Boolean);
+    pairs.forEach((pair) => {
+      const [attr, key] = pair.split(":").map((s) => s.trim());
+      if (!attr || !key) return;
+      const value = t(dict, key);
+      if (value != null) el.setAttribute(attr, value);
+    });
   });
 
   document.querySelectorAll("[data-lang-group]").forEach((group) => {

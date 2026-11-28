@@ -22,7 +22,7 @@ function detectLang() {
   } catch {
     /* storage unavailable */
   }
-  return (navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es";
+  return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
 }
 
 let lang = detectLang();
@@ -213,9 +213,15 @@ const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      navLinks.forEach((link) =>
-        link.classList.toggle("is-active", link.dataset.nav === entry.target.id),
-      );
+      navLinks.forEach((link) => {
+        const isActive = link.dataset.nav === entry.target.id;
+        link.classList.toggle("is-active", isActive);
+        if (isActive) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
     });
   },
   { rootMargin: "-30% 0px -55% 0px" },
